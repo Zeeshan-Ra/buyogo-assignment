@@ -28,7 +28,7 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       const loginData = this.loginForm.value;
 
-      this.http.post('http://localhost:8200/api/v1/login', loginData)
+      this.http.post('https://buyogo-assignment.onrender.com/api/v1/login', loginData)
         .pipe(
           catchError(error => {
             console.error('Login failed', error);
