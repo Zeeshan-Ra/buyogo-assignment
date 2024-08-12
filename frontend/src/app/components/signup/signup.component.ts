@@ -41,7 +41,7 @@ export class SignupComponent {
     if (this.signupForm1.valid && this.signupForm2) {
       const signupData = { ...this.signupForm1.value, ...this.signupForm2.value };
 
-      this.http.post('http://localhost:8200/api/v1/signup', signupData)
+      this.http.post('https://buyogo-assignment.onrender.com/api/v1/signup', signupData)
         .pipe(
           catchError(error => {
             console.error('Signup failed', error);
