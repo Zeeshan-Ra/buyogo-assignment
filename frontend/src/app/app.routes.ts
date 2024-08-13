@@ -11,6 +11,7 @@ export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login-success', component: LoginsuccessComponent },
   { path: 'signup-success', component: SignupsuccessComponent },
+  { path: '**', component: LoginComponent },
 ];
 
 @NgModule({
